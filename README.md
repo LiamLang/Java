@@ -1,10 +1,10 @@
 # Java
-Some miscellaneous programs from playing around in Java.
+Some miscellaneous programs from joyful evenings spent playing around in Java.
 
 ## Lorenz Attractor
 Visualisation of the Lorenz Attractor, rotating in space, with a point progressing in time and a tail of a certain length trailing behind it.
 
-![Screenshot](https://raw.githubusercontent.com/LiamLang/Java/master/images/attractor.png)
+![](https://raw.githubusercontent.com/LiamLang/Java/master/images/attractor.gif)
 
 
 ## Mandelbrot set
@@ -22,3 +22,13 @@ Visualisation of the Mandelbrot set, zoomable by clicking, and with brightness b
 Implementation of Conway's Game of Life, with some objects in the world.
 
 ![Screenshot](https://raw.githubusercontent.com/LiamLang/Java/master/images/life.png)
+
+## Bifurcation diagram
+Plot of the bifurcation diagram of the logistic map.
+
+![Screenshot](https://raw.githubusercontent.com/LiamLang/Java/master/images/bifurcation.png)
+
+## Mandelbrot set & bifurcation diagram
+Plot of the Mandelbrot set, with the birfurcation diagram of the function that generates it, along the real axis, perpendicular; rotating in space.
+
+![](https://raw.githubusercontent.com/LiamLang/Java/master/images/mandelbrot_bifurcation.gif)
