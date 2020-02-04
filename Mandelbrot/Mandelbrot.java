@@ -1,4 +1,3 @@
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -9,7 +8,33 @@ import java.awt.image.BufferedImage;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import org.apache.commons.math3.complex.Complex;
+class Complex
+{
+    double r;
+    double i;
+    
+    public Complex(double _r, double _i)
+    {
+        this.r = _r;
+        this.i = _i;
+    }
+    
+    public Complex square()
+    {
+        return new Complex(Math.pow(r, 2d) - Math.pow(i, 2d), 2d * r * i);
+    }
+    
+    public void add(Complex other)
+    {
+        r += other.r;
+        i += other.i;
+    }
+    
+    public double abs()
+    {
+        return Math.pow(Math.pow(r, 2d) + Math.pow(i, 2d), 1d / 2d);
+    }
+}
 
 @SuppressWarnings("serial")
 public class Mandelbrot extends JPanel {
@@ -43,11 +68,8 @@ public class Mandelbrot extends JPanel {
                 Complex z = new Complex(0.0, 0.0);
 
                 for (int k = 1; k <= iterations; k++) {
-                    z = z.pow(2.0);
-                    if (z.isNaN()) {
-                        z = new Complex(0.0, 0.0);
-                    }
-                    z = z.add(c);
+                    z = z.square();
+                    z.add(c);
                     Double q = z.abs();
                     if (q >= 2.0) {
                         large = k + 10 - Math.log(q);
