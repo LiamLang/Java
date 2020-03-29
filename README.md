@@ -6,6 +6,12 @@ Visualisation of the Lorenz Attractor, rotating in space, with a point progressi
 
 ![](https://raw.githubusercontent.com/LiamLang/Java/master/images/attractor.gif)
 
+## Ray tracer
+Very simple ray tracer, with some coloured, perfectly reflective spheres lit from a particular direction.
+
+![](https://raw.githubusercontent.com/LiamLang/Java/master/images/raytracer.gif)
+
+![Screenshot](https://raw.githubusercontent.com/LiamLang/Java/master/images/spheres1.png)
 
 ## Mandelbrot set
 Visualisation of the Mandelbrot set, zoomable by clicking, and with brightness based on escape time for points not in the set.
